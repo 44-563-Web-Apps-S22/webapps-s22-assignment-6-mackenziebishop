@@ -27,16 +27,14 @@ function checkGuess (){
     var wrong = 0
 
     console.log("Getting form values")
-    age = document.getElementById("presidentpass").value
-    nick = document.getElementById("form1_guess").value
+    password = document.getElementById("presidentpass").value
+    guess = document.getElementById("form1_guess").value
     confirmed = confirm("Are these the values? "+password+" and "+guess)
     
     out = document.getElementById("result")
     if(confirmed){
-        correct + 1
         out.innerHTML = "You got it right!"
     } else {
-        wrong + 1
         out.innerHTML = "Wrong president!"
     }
 }
