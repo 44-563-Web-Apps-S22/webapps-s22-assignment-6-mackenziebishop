@@ -8,8 +8,8 @@
 <h2>President Guess by Mackenzie Bishop</h2>
 
 <form>
-    <label for="George Washington">Enter the secret president name</label>
-    <input type ="password" id="George Washington" name="George Washington"> <br>
+    <label for="presidentpass">Enter the secret president name</label>
+    <input type ="password" id="presidentpass" name="presidentpass" value="George Washington"> <br>
 
     <label for="form1_guess">Guess the president</label>
     <input type ="text" id="form1_guess" name="form1_guess" autofocus> <br>
@@ -27,7 +27,7 @@ function checkGuess (){
     var wrong = 0
 
     console.log("Getting form values")
-    age = document.getElementById("George Washington").value
+    age = document.getElementById("presidentpass").value
     nick = document.getElementById("form1_guess").value
     confirmed = confirm("Are these the values? "+password+" and "+guess)
     
