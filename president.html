@@ -33,8 +33,10 @@ function checkGuess (){
     
     out = document.getElementById("result")
     if(confirmed){
+        correct + 1
         out.innerHTML = "You got it right!"
     } else {
+        wrong + 1
         out.innerHTML = "Wrong president!"
     }
 }
