@@ -21,7 +21,7 @@
 <p id="result">This text will be replaced </p>
 
 <div>
-    <img src="black_korhaan.jpg" alt="Black Korhaan image" width="100" height="100" onclick="swapImage()">
+    <img id="imageOne"src="black_korhaan.jpg" width="100" height="100" onclick="swapImage()">
 </div>
 
 <script> 
@@ -46,7 +46,7 @@ function checkGuess (){
 
     function swapImage(){
         useImage = 1;
-        var src = img.src;
+        var src = document.getElementById("imageOne");
         switch(swapImage){
             case '1': src = "iceland_gull.jpg"
             useImage = 2;
