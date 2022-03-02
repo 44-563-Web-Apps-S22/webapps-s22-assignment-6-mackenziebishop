@@ -20,6 +20,10 @@
 
 <p id="result">This text will be replaced </p>
 
+<div>
+    <img src="black_korhaan.jpg" alt="Black Korhaan image" width="100" height="100" onclick="swapImage()">
+</div>
+
 <script> 
 
 function checkGuess (){
@@ -38,6 +42,20 @@ function checkGuess (){
     } else {
         wrong + 1
         out.innerHTML = "Wrong president!"
+    }
+
+    function swapImage(){
+        useImage = 1;
+        var src = img.src;
+        switch(useImage){
+            case '1': src = "iceland_gull.jpg"
+            useImage = 2;
+            case '2': src = "sage_sparrow.jpg"
+            useImage = 3;
+            case '3': src = "black_korhaan.jpg"
+            useImage = 1;
+            break;
+        }
     }
 }
 </script>
