@@ -47,11 +47,13 @@ function checkGuess (){
     function swapImage(){
         useImage = 1;
         var src = document.getElementById("imageOne");
-        switch(useImage) {
+        switch(onclick) {
             case 1: src = "iceland_gull.jpg"
             useImage = 2;
+            break;
             case 2: src = "sage_sparrow.jpg"
             useImage = 3;
+            break;
             case 3: src = "black_korhaan.jpg"
             useImage = 1;
             break;
